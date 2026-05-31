@@ -1,0 +1,263 @@
+/* Authentication Styles */
+.auth-container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: var(--gray-100);
+}
+
+.auth-panel {
+  width: min(1100px, 100%);
+  min-height: 620px;
+  background: var(--gray-100);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 48px 24px;
+  box-shadow: none;
+}
+
+.auth-shell {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+}
+
+.auth-card {
+  width: 448px;
+  background: var(--white);
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.08);
+  display: grid;
+  gap: 20px;
+  position: relative;
+}
+
+.auth-header {
+  display: grid;
+  gap: 8px;
+  text-align: center;
+}
+
+.auth-logo {
+  width: 140px;
+  height: auto;
+}
+
+.auth-form {
+  display: grid;
+  gap: 16px;
+}
+
+.input-group {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.input-field {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  gap: 12px;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  height: 44px;
+}
+
+.input-field img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.input-field input {
+  border: none;
+  padding: 0;
+  height: 100%;
+  outline: none;
+  font-size: 14px;
+  color: var(--gray-700);
+  background: transparent;
+}
+
+.input-field input::placeholder {
+  color: var(--gray-400);
+}
+
+.primary {
+  width: 100%;
+}
+
+.icon-button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.icon-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.auth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.checkbox {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--brand-base);
+}
+
+.link-button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--brand-base);
+  font: inherit;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.link-button-chevron {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  mask-image: url("/assets/Icon/chevron-right.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("/assets/Icon/chevron-right.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.link-button-plus {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+  mask-image: url("/assets/Icon/plus.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("/assets/Icon/plus.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  color: var(--gray-400);
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: var(--gray-200);
+}
+
+.auth-muted {
+  text-align: center;
+  color: var(--gray-500);
+  font-size: 14px;
+  margin: 0;
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--gray-300);
+  color: var(--gray-700);
+  font-weight: 600;
+  background: var(--white);
+}
+
+.secondary-button img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+.snackbar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gray-800);
+  color: var(--white);
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  max-width: 90%;
+  animation: slideUp 0.3s ease;
+}
+
+.snackbar p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}

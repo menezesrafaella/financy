@@ -1,0 +1,44 @@
+/* Tag and Badge Styles */
+.tag {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--brand-light);
+  color: var(--brand-base);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tag--green {
+  background: var(--brand-light);
+  color: var(--brand-base);
+}
+
+.tag--blue {
+  background: var(--blue-light);
+  color: var(--blue-base);
+}
+
+.tag--purple {
+  background: var(--purple-light);
+  color: var(--purple-base);
+}
+
+.tag--orange {
+  background: var(--orange-light);
+  color: var(--orange-base);
+}
+
+.tag--pink {
+  background: var(--pink-light);
+  color: var(--pink-base);
+}
+
+.tag--yellow {
+  background: var(--yellow-light);
+  color: var(--yellow-dark);
+}
+
+.tag--red {
+  background: var(--red-light);
+  color: var(--red-base);
+}

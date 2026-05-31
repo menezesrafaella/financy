@@ -1,0 +1,140 @@
+/* Transaction Styles */
+.transaction-list {
+  display: grid;
+}
+
+.transaction-item {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1.25fr) minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.transaction-item + .transaction-item {
+  border-top: 1px solid var(--gray-200);
+}
+
+.transaction-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.transaction-icon-glyph {
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  mask-image: var(--transaction-icon);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: var(--transaction-icon);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.transaction-icon--green {
+  background: var(--brand-light);
+  color: var(--brand-base);
+}
+
+.transaction-icon--blue {
+  background: var(--blue-light);
+  color: var(--blue-base);
+}
+
+.transaction-icon--purple {
+  background: var(--purple-light);
+  color: var(--purple-base);
+}
+
+.transaction-icon--orange {
+  background: var(--orange-light);
+  color: var(--orange-base);
+}
+
+.transaction-icon--pink {
+  background: var(--pink-light);
+  color: var(--pink-base);
+}
+
+.transaction-icon--yellow {
+  background: var(--yellow-light);
+  color: var(--yellow-dark);
+}
+
+.transaction-icon--red {
+  background: var(--red-light);
+  color: var(--red-base);
+}
+
+.transaction-info {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.transaction-info strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.transaction-info span {
+  color: var(--gray-500);
+  font-size: 12px;
+}
+
+.transaction-item .tag {
+  justify-self: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transaction-item__amount {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+}
+
+.transaction-value {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gray-800);
+}
+
+.transaction-trend-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+.transaction-trend-icon--income {
+  background-color: var(--brand-base);
+  mask-image: url("/assets/Icon/circle-arrow-up.svg");
+  -webkit-mask-image: url("/assets/Icon/circle-arrow-up.svg");
+}
+
+.transaction-trend-icon--expense {
+  background-color: var(--red-base);
+  mask-image: url("/assets/Icon/circle-arrow-down.svg");
+  -webkit-mask-image: url("/assets/Icon/circle-arrow-down.svg");
+}
+
+.transaction-list-empty {
+  padding: 16px 24px;
+}

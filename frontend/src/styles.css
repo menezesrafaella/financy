@@ -1,0 +1,18 @@
+/* Import CSS Modules */
+@import url("./styles/variables.css");
+@import url("./styles/base.css");
+
+/* Components */
+@import url("./styles/components/Topbar.css");
+@import url("./styles/components/Avatar.css");
+@import url("./styles/components/Card.css");
+@import url("./styles/components/Transaction.css");
+@import url("./styles/components/Tag.css");
+@import url("./styles/components/Modal.css");
+
+/* Pages */
+@import url("./styles/pages/Auth.css");
+@import url("./styles/pages/Dashboard.css");
+@import url("./styles/pages/Profile.css");
+@import url("./styles/pages/Categories.css");
+@import url("./styles/pages/Transactions.css");

@@ -1,0 +1,78 @@
+/* Topbar Navigation Component */
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 16px 48px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.topbar-brand img {
+  width: 140px;
+  height: auto;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--gray-600);
+}
+
+.topbar-nav a {
+  position: relative;
+  padding: 4px 2px 8px;
+}
+
+.topbar-nav a.active {
+  color: var(--brand-base);
+}
+
+.topbar-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--brand-base);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-profile-link {
+  display: flex;
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.topbar-profile-link:focus-visible {
+  outline: 2px solid var(--brand-base);
+  outline-offset: 3px;
+}
+
+.topbar-profile-link.is-active .avatar {
+  box-shadow: 0 0 0 2px var(--brand-base);
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}

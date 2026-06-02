@@ -84,8 +84,4 @@ Após rodar o comando npm run prisma:seed no backend, um usuário padrão será 
 E-mail: test@financy.app
 Senha: password1234
 
-Cada módulo possui sua própria documentação contendo detalhes específicos da arquitetura, scripts, configurações extras e checklists do desafio:
-
-📦 Documentação do Backend
-
-🎨 Documentação do Frontend
+Cada módulo possui sua própria documentação contendo detalhes específicos da arquitetura, scripts, configurações extras e checklists do desafio
